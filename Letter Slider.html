@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link href="Main.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="JQUERY%20Main.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="slider">
+                <div id="d">
+                    D
+                </div>
+                <div class="line"></div>
+                <div id="data">
+                    CASE 1<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">COOL<br>DESIGN</div>
+                    <div class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, When an unkown printer took a gallery of type and scrambled it to make a type specimen book.</div>
+                </div>
+                
+                <div id="a">
+                    A
+                </div>
+                <div class="line"></div>
+                <div id="data2">
+                    CASE 2<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">COOL<br>DESIGN</div>
+                    <div class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, When an unkown printer took a gallery of type and scrambled it to make a type specimen book.</div>
+                </div>
+                
+                <div id="f">
+                    F
+                </div>
+                <div class="line"></div>
+                <div id="data3">
+                    CASE 3<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">COOL<br>DESIGN</div>
+                    <div class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, When an unkown printer took a gallery of type and scrambled it to make a type specimen book.</div>
+                </div>
+                
+                <div id="t">
+                    T
+                </div>
+                <div class="line"></div>
+                <div id="data4">
+                    CASE 4<br>
+                    <hr size="2" width="50px" color="#111" align="left"/>
+                    <div class="title">COOL<br>DESIGN</div>
+                    <div class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, When an unkown printer took a gallery of type and scrambled it to make a type specimen book.</div>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <a href="#" id="circle1"></a>
+            <a href="#" id="circle2"></a>
+            <a href="#" id="circle3"></a>
+            <a href="#" id="circle4"></a>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var l1=$("#d");
+        var l2=$("#a");
+        var l3=$("#f");
+        var l4=$("#t");
+        
+        var layer=$("#main");
+        
+        layer.mousemove(function(e){
+            var valueX=(e.pageX * -1 / 40) ;
+            
+            l1.css({'background-position':(valueX-200)+' '+0}); 
+            l2.css({'background-position':(valueX)+' '+0}); 
+            l3.css({'background-position':(valueX-200)+' '+0}); 
+            l4.css({'background-position':(valueX+600)+' '+0}); 
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>    
+</html>
